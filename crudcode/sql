@@ -1,0 +1,10 @@
+CREATE DATABASE crudcode;
+
+CREATE TABLE elegido (
+  id int(11) NOT NULL AUTO_INCREMENT ,
+  nombre varchar(255) NOT NULL,
+  apellido varchar(255)  NOT NULL,
+  edad int(11) NOT NULL,
+  digimon varchar(244)  NOT NULL,
+  PRIMARY KEY(id)
+) ENGINE=InnoDB ;

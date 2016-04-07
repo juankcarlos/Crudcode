@@ -1,0 +1,9 @@
+CRUD EN CODEIGNITER
+
+1-copia el archivo a tu servidor local en windows es c:/xampp/htdocs/
+2-en la carpeta aplication/config en el archivo databe y modifica las siguientes lineas
+'hostname' => 'localhost',
+'username' => '', //to usuario de mysql
+'password' => '',//tu password
+3-copia el script llamado sql y ejecutalo en mysql para crear la base de datos
+4-por ultimo pon en el navegador http://localhost/crudcode/   para poder ejecutar el proyecto
