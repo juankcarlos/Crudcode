@@ -37,7 +37,7 @@
   				</div>";
  			}?>	
  		
- 		<form action="<?php echo base_url();?>index.php/elegidoController/crear"class="form-horizontal" method="POST">
+ 		<form action="<?php echo base_url();?>elegidoController/crear"class="form-horizontal" method="POST">
 		<div class="form-group">
 		<label class="col-md-2">Nombre</label>
 		<div class="col-md-10">
@@ -96,9 +96,9 @@
 	 	               	<td><?php echo $v->apellido;?></td>
 	 	               	<td><?php echo $v->edad;?></td>
 	 	               	<td><?php echo $v->digimon;?></td>
-	 	               	<td><a class="btn btn-primary" href="<?php echo base_url();?>index.php/elegidoController/editar/<?php echo $v->id;?>">actualizar</a>
+	 	               	<td><a class="btn btn-primary" href="<?php echo base_url();?>elegidoController/editar/<?php echo $v->id;?>">actualizar</a>
 	 	               	</td>
-	 	               	<td><a href="<?php echo base_url();?>index.php/elegidoController/borrarnino/<?php echo  $v->id;?>" class="btn btn-danger">X</a></td>
+	 	               	<td><a href="<?php echo base_url();?>elegidoController/borrarnino/<?php echo  $v->id;?>" class="btn btn-danger">X</a></td>
 	 	               </tr>
 	 					<?php endforeach;?>
 					</tbody>

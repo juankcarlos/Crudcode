@@ -1,3 +1,10 @@
-RewriteEngine on
-RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /crudcode
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+ErrorDocument 404 /crudcode/index.php
+</IfModule>
