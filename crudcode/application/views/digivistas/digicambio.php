@@ -3,7 +3,7 @@
  	<div class="row-fluid">
  		
 
- 		<form action="<?php echo base_url();?>actualizar"class="form-horizontal" method="POST">
+ 		<form action="<?php echo base_url();?>elegidoController/actualizar"class="form-horizontal" method="POST">
 		<input type="hidden" name="esc" value="<?php echo $act->id;?>"></input>
 		<div class="form-group">
 		<label class="col-md-2">Nombre</label>
